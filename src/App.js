@@ -40,8 +40,8 @@ export default function App() {
       </div>
       <div className="list">
         {todoList.map((task) => {
-         return <div className="l-list">
-            <p key={task.id}>{task.taskName}</p>
+         return <div className="l-list" key ={task.id}>
+            <p>{task.taskName}</p>
             <AiFillDelete onClick={() => deleteTask(task.id)}  />
             
          </div>
